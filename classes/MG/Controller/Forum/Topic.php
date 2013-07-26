@@ -46,6 +46,8 @@ class MG_Controller_Forum_Topic extends Abstract_Controller_Forum {
 
 		// Display the topic.
 		$posts = $this->topic->posts;
+		// Load with titles.
+		$posts->with('user:title');
 
 		$paginate = Paginate::factory($posts, array('total_items' => 10))
 			->execute();
