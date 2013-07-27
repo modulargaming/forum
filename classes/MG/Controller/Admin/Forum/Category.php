@@ -5,7 +5,7 @@ class MG_Controller_Admin_Forum_Category extends Abstract_Controller_Admin {
 		public function action_index()
 		{
 
-			if (!$this->user->can('Admin_Forum_Category_Index'))
+			if ( ! $this->user->can('Admin_Forum_Category_Index'))
 			{
 				throw HTTP_Exception::factory('403', 'Permission denied to view admin forum index');
 			}
@@ -19,13 +19,13 @@ class MG_Controller_Admin_Forum_Category extends Abstract_Controller_Admin {
 			$this->view->categories = $categories->as_array();
 		}
 
-		public function action_paginate() {
+		public function action_paginate()
+		{
 
-			if (!$this->user->can('Admin_Forum_Category_Paginate'))
+			if ( ! $this->user->can('Admin_Forum_Category_Paginate'))
 			{
 				throw HTTP_Exception::factory('403', 'Permission denied to view admin forum category paginate');
 			}
-
 
 			if (DataTables::is_request())
 			{
@@ -49,13 +49,15 @@ class MG_Controller_Admin_Forum_Category extends Abstract_Controller_Admin {
 				$datatables->render($this->response);
 			}
 			else
-				throw new HTTP_Exception_500();
+			{
+				throw HTTP_Exception::factory('500', 'Internal server error');
+			}
 		}
 
 		public function action_retrieve()
 		{
 
-			if (!$this->user->can('Admin_Forum_Category_Retrieve'))
+			if ( ! $this->user->can('Admin_Forum_Category_Retrieve'))
 			{
 				throw HTTP_Exception::factory('403', 'Permission denied to view admin forum category retrieve');
 			}
@@ -88,7 +90,7 @@ class MG_Controller_Admin_Forum_Category extends Abstract_Controller_Admin {
 		public function action_save()
 		{
 
-			if (!$this->user->can('Admin_Forum_Category_Save'))
+			if ( ! $this->user->can('Admin_Forum_Category_Save'))
 			{
 				throw HTTP_Exception::factory('403', 'Permission denied to view admin forum category save');
 			}
@@ -118,7 +120,8 @@ class MG_Controller_Admin_Forum_Category extends Abstract_Controller_Admin {
 					)
 				);
 				$this->response->body(json_encode($data));
-			} catch (ORM_Validation_Exception $e)
+			}
+			catch (ORM_Validation_Exception $e)
 			{
 				$errors = array();
 
@@ -126,7 +129,7 @@ class MG_Controller_Admin_Forum_Category extends Abstract_Controller_Admin {
 
 				foreach ($list as $field => $er)
 				{
-					if (!is_array($er))
+					if ( ! is_array($er))
 					{
 						$er = array($er);
 					}
@@ -141,7 +144,7 @@ class MG_Controller_Admin_Forum_Category extends Abstract_Controller_Admin {
 		public function action_delete()
 		{
 
-			if (!$this->user->can('Admin_Forum_Category_Delete'))
+			if ( ! $this->user->can('Admin_Forum_Category_Delete'))
 			{
 				throw HTTP_Exception::factory('403', 'Permission denied to view admin forum category delete');
 			}
