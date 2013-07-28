@@ -14,7 +14,7 @@ class MG_View_Admin_Forum_Category_Index extends Abstract_View_Admin {
 				'id'          => $category->id,
 				'title'        => $category->title,
 				'description' => $category->description,
-				'locked'      => (boolean) $category->locked
+				'locked'      => (bool) $category->locked
 			);
 		}
 
