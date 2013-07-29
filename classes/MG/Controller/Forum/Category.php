@@ -3,7 +3,7 @@
  * Forum category controller.
  * Handles viewing categories AND creating new topics.
  *
- * @package    MG Forum
+ * @package    MG/Forum
  * @category   Controller
  * @author     Modular Gaming Team
  * @copyright  (c) 2013 Modular Gaming Team

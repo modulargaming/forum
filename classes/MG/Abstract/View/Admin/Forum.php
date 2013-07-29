@@ -2,7 +2,7 @@
 /**
  * Abstract base view for forum admin.
  *
- * @package    MG Forum
+ * @package    MG/Forum
  * @category   View
  * @author     Modular Gaming Team
  * @copyright  (c) 2013 Modular Gaming Team

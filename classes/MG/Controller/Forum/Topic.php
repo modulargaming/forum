@@ -3,7 +3,7 @@
  * Forum Topic controller.
  * Handles viewing a topic AND replying to it.
  *
- * @package    MG Forum
+ * @package    MG/Forum
  * @category   Controller
  * @author     Modular Gaming Team
  * @copyright  (c) 2013 Modular Gaming Team

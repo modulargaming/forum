@@ -1,5 +1,13 @@
 <?php defined('SYSPATH') OR die('No direct script access.');
-
+/**
+ * View for Forum Topic Index
+ *
+ * @package    MG/Forum
+ * @category   View
+ * @author     Modular Gaming Team
+ * @copyright  (c) 2013 Modular Gaming Team
+ * @license    BSD http://modulargaming.com/license
+ */
 class MG_View_Forum_Topic_Index extends Abstract_View_Forum_Topic {
 
 	public $posts;

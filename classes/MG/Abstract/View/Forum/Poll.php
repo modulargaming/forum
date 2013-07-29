@@ -1,5 +1,13 @@
 <?php defined('SYSPATH') OR die('No direct script access.');
- 
+/**
+ * Abstract view for forum poll.
+ *
+ * @package    MG/Forum
+ * @category   View
+ * @author     Modular Gaming Team
+ * @copyright  (c) 2013 Modular Gaming Team
+ * @license    BSD http://modulargaming.com/license
+ */ 
 class MG_Abstract_View_Forum_Poll extends Abstract_View_Forum_Topic {
 
 	protected function get_breadcrumb()

@@ -1,5 +1,13 @@
 <?php defined('SYSPATH') OR die('No direct script access.');
-
+/**
+ * Forum Poll Option Model.
+ *
+ * @package    MG/Forum
+ * @category   Model
+ * @author     Modular Gaming Team
+ * @copyright  (c) 2012-2013 Modular Gaming Team
+ * @license    BSD http://modulargaming.com/license
+ */
 class MG_Model_Forum_Poll_Option extends ORM {
 
 

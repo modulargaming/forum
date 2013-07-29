@@ -1,8 +1,8 @@
 <?php defined('SYSPATH') OR die('No direct script access.');
 /**
- * Abstract view for forum Category.
+ * Abstract view for forum category.
  *
- * @package    MG Forum
+ * @package    MG/Forum
  * @category   View
  * @author     Modular Gaming Team
  * @copyright  (c) 2013 Modular Gaming Team

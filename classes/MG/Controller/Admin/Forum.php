@@ -1,4 +1,13 @@
 <?php defined('SYSPATH') OR die('No direct script access.');
+/**
+ * Controller for Admin Forum
+ *
+ * @package    MG/Forum
+ * @category   Controller
+ * @author     Modular Gaming Team
+ * @copyright  (c) 2013 Modular Gaming Team
+ * @license    BSD http://modulargaming.com/license
+ */
 
 class MG_Controller_Admin_Forum extends Abstract_Controller_Admin {
 
