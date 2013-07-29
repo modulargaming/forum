@@ -6,7 +6,7 @@ return array (
 			'enabled'     => TRUE,
 			'name'        => 'Forum',
 			'description' => 'Lightweight forum system.',
-			'copyright'   => '&copy; 2012–2013 Modular Gaming Team',
+			'copyright'   => '&copy; 2012–2013 Modular Gaming',
 		)
 	)
 );
