@@ -8,7 +8,6 @@
  * @copyright  (c) 2013 Modular Gaming Team
  * @license    BSD http://modulargaming.com/license
  */
-
 class MG_Controller_Admin_Forum extends Abstract_Controller_Admin {
 
 	public function action_index()
